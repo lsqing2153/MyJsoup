@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sqing.www.mytxtread.activity.SearchActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="ib_close"
+            android:scaleType="centerInside"
+            android:src="@drawable/ib_close" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center_vertical"
+           >
+           <EditText
+               android:id="@+id/et_name"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textColor="@color/colorWhite"
+               android:background="@color/colorPrimary"
+                android:hint="请输入书名或作者名"
+               android:textColorHint="#ccc"
+
+               />
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:background="@drawable/search"
+               android:scaleType="centerInside"
+               android:onClick="onSearch"
+               />
+
+
+       </LinearLayout>
+    </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="?colorValue" >
+
+        <TextView
+            android:id="@+id/tv_www_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="顶点小说"
+            android:textColor="?txtColorValue"
+            android:textSize="22.0dip" />
+
+        <TextView
+            android:id="@+id/tv_www_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="落秋中文"
+            android:textColor="?txtColorValue"
+            android:textSize="22.0dip" />
+
+        <TextView
+            android:id="@+id/tv_www_3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="请看小说"
+            android:textColor="?txtColorValue"
+            android:textSize="22.0dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/this_display" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_pb_saerch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="?colorValue"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:id="@+id/pb_saerch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</FrameLayout>
+</LinearLayout>

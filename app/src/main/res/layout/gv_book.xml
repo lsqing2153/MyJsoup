@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:background="?colorValue"
+    >
+    <LinearLayout
+        android:id="@+id/ll_gv_book"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+    <ImageView
+        android:id="@+id/iv_book_gv_img"
+        android:layout_width="85dp"
+        android:layout_height="100dp"
+        android:src="@drawable/book_no_img"
+        />
+    <TextView
+        android:id="@+id/tv_book_gv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="?txtColorValue"
+        />
+
+    <TextView
+        android:id="@+id/tv_book_gv_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_book_gv_this_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_book_gv_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    </LinearLayout>
+
+
+
+</LinearLayout>

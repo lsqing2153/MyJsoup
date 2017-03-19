@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_book_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?colorValue"
+    tools:context="com.sqing.www.mytxtread.activity.BookCategoryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="ib_close"
+            android:scaleType="centerInside"
+            android:src="@drawable/ib_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/book_category"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+
+            />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gv_book_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:gravity="center"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        />
+</LinearLayout>

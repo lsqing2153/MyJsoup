@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorValue"
+    android:orientation="vertical"
+    tools:context="com.sqing.www.mytxtread.activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageButton
+            android:src="@drawable/ib_close"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerInside"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="ib_close"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/setting"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:text="重置"
+                android:onClick="resetting"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="字体大小"
+        android:textSize="20sp"
+        android:textColor="?txtColorValue"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="?btnColorValue"
+            android:onClick="reduce"
+            android:text="-"
+            android:textSize="30sp"
+            android:textColor="?txtColorValue"
+            />
+
+        <TextView
+            android:id="@+id/tv_setting_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="20"
+            android:textSize="30sp"
+            android:background="?colorValue"
+            android:textColor="?txtColorValue"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="?btnColorValue"
+            android:textColor="?txtColorValue"
+            android:onClick="add"
+            android:text="+" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="背景颜色"
+        android:textSize="20sp"
+        android:textColor="?txtColorValue"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_book_read_bj_green"
+            android:background="@drawable/book_bj_green"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:onClick="bjSwitch"
+            />
+        <Button
+            android:id="@+id/btn_book_read_bj_gray"
+            android:background="@drawable/book_bj_gray"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:onClick="bjSwitch"
+            />
+        <Button
+            android:id="@+id/btn_book_read_bj_brown"
+            android:background="@drawable/book_bj_brown"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:onClick="bjSwitch"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_setting_show"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorBjGreen"
+        android:text="    恍惚间，苏晋已经又站在了北京城下，这一年又是会试，他参国进士考试，一举得中，状元之才担任专管代皇帝撰似制诏诰令的知制语。\n     过了三年，他出任了同州知府，后来又改任陕州知府。苏晋的本性善良，治理有方。当地百姓都赞美他的功德。于是，没过多长时间，他被朝廷征召入京，任顺天府尹，也就是管理京城的地方行政官。\n     不久，爆发了边境战争，皇帝便派苏晋去镇守边防。苏晋到任后，治军严厉，操练有方，开拓疆土九百里，马上又迁户部尚书兼御史大夫，功大位高，满朝文武官员深为折服。\n     苏晋的功成名就，招致了官僚们的妒忌。于是，各种各样的谣言都向他飞来，指责他沽名钓誉，结党营私，交结边将，图谋不轨。很快，皇帝下诏将他逮捕入狱。与他一同实被诬的人都被处死了，只有他因为有皇帝宠幸的太监作保，才被减免死罪，流放到偏远蛮荒的地方。\n"
+        android:textColor="@color/colorTxt"
+        android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

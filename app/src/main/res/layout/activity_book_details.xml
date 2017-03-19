@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorValue"
+    android:orientation="vertical"
+    tools:context="com.sqing.www.mytxtread.activity.BookDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="ib_close"
+            android:scaleType="centerInside"
+            android:src="@drawable/ib_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/book_details"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_book_img"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="2dp"
+                            android:src="@drawable/book_no_img" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_book_details_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:textColor="?txtColorValue"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/tv_book_details_category"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:textColor="@color/colorGray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_book_details_author"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:textColor="@color/colorGray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_book_details_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:textColor="@color/colorGray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_book_details_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:textColor="@color/colorGray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_book_details_latest_chapter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:textColor="@color/colorGray"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_book_details_open"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:onClick="OpenBook"
+                            android:background="@drawable/button_open"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:text="@string/book_read" />
+
+                        <Button
+                            android:id="@+id/btn_book_details_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:onClick="AddBook"
+                            android:background="@drawable/button_open"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:text="@string/book_add" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/book_synopsis"
+                        android:textSize="20sp"
+                        android:textColor="?txtColorValue"
+                        />
+
+                    <TextView
+                        android:textColor="?txtColorValue"
+                        android:id="@+id/tv_book_details_synopsis"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="6dp"
+                        android:text="简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_pb_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?colorValue"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/progressbar" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorEdgeEffect">@color/colorPrimary</item>
+        <item name="btnColorValue">#eee</item>
+        <item name="txtColorValue">#555</item>
+        <item name="colorValue">#eee</item>
+    </style>
+    <style name="AppThemeNight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorEdgeEffect">@color/colorPrimary</item>
+        <item name="btnColorValue">#222</item>
+        <item name="txtColorValue">#aaa</item>
+        <item name="colorValue">#222</item>
+    </style>
+    <style name="BookRead" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimaryDark">#000000</item>
+        <item name="colorValue">#00000000</item>
+        <item name="txtColorValue">@color/colorTxt</item>
+        <item name="btnColorValue">#333</item>
+    </style>
+
+    <style name="DayNight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">#000000</item>
+        <item name="colorValue">#000000</item>
+        <item name="txtColorValue">#959595</item>
+        <item name="btnColorValue">@color/colorGray</item>
+    </style>
+</resources>

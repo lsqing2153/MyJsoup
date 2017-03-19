@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">阅读器</string>
+    <string name="book_details">详情</string>
+    <string name="book_category">类别</string>
+    <string name="book_category_xh">玄幻</string>
+    <string name="book_synopsis">简介</string>
+    <string name="book_read">阅读</string>
+    <string name="book_add">加入书架</string>
+    <string name="setting">设置</string>
+    <string name="book_source">来源</string>
+    <string name="book_search">搜索</string>
+</resources>
