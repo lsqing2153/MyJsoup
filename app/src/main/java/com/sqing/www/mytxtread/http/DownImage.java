@@ -46,7 +46,6 @@ public class DownImage {
                     message.obj = bitmap;
                     handler.sendMessage(message);
                 }
-
             }
         }).start();
     }
