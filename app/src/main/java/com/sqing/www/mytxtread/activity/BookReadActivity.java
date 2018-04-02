@@ -562,6 +562,17 @@ public class BookReadActivity extends AppCompatActivity {
         for (String rawTextLine : rawTextLines) {
             if (tvPaint.measureText(rawTextLine) <= tvWidth) {
                 //如果整行宽度在控件可用宽度之内，就不处理了
+//                float w=tvWidth-tvPaint.measureText(rawTextLine);
+//                int v = (int) (w / tvPaint.measureText("\r"));
+//                char[] chars = rawTextLine.toCharArray();
+//                String s="";
+//                for(int i=0;i<chars.length;i++){
+//                    if(v!=0){
+//                        s+=chars[i]+"\r";
+//                    }else{
+//                        s+=chars[i];
+//                    }
+//                }
                 sbNewText.append(rawTextLine);
             } else {
                 //如果整行宽度超过控件可用宽度，则按字符测量，在超过可用宽度的前一个字符处手动换行

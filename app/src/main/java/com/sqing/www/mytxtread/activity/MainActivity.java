@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.sqing.www.mytxtread.R;
 import com.sqing.www.mytxtread.dao.BookDao;
 
+import com.sqing.www.mytxtread.jurisdiction.Jurisdiction;
 import com.sqing.www.mytxtread.userdata.Book;
 
 import java.io.BufferedWriter;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         info();
 
-
+        new Jurisdiction(ctx,this).jurisdiction_sd();
 
     }
 
